@@ -1,0 +1,50 @@
+{
+    "name": "ahmetarsiv/stripe-payment-gateway",
+    "type": "package",
+    "description": "The Laravel eCommerce Stripe Payment Gateway",
+    "keywords": [
+        "bagisto",
+        "payment",
+        "ecommerce",
+        "stripe",
+        "opensource"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ahmetarsiv",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Ahmet Sefa Arşiv",
+            "email": "ahmetarsivpm@gmail.com",
+            "homepage": "https://github.com/ahmetarsiv",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/ahmetarsiv/stripe-payment-gateway",
+        "issues": "https://github.com/ahmetarsiv/stripe-payment-gateway/issues",
+        "email": "ahmetarsivpm@gmail.com"
+    },
+    "require": {
+        "stripe/stripe-php": "^10.12"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/ahmetarsiv"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Stripe\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Stripe\\Providers\\StripeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
