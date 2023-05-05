@@ -9,7 +9,7 @@ Install this package now to receive secure payments in your online store. Stripe
 ## 2. Requirements:
 
 * **PHP**: 8.0 or higher.
-* **Bagisto**: v1.4.*
+* **Bagisto**: v1.5.*
 * **Composer**: 1.6.5 or higher.
 
 ## 3. Installation:
