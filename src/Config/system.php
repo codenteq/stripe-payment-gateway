@@ -4,7 +4,7 @@ return [
     [
         'key'    => 'sales.payment_methods.stripe',
         'name'   => 'Stripe',
-        'sort'   => 1,
+        'sort'   => 0,
         'fields' => [
             [
                 'name'          => 'title',
