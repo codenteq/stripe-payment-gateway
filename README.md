@@ -1,6 +1,6 @@
 # Stripe Payment Gateway
-[![License](https://poser.pugx.org/ahmetarsiv/stripe-payment-gateway/license)](https://github.com/ahmetarsiv/stripe-payment-gateway/blob/master/LICENSE)
-<a href="https://packagist.org/packages/ahmetarsiv/stripe-payment-gateway"><img src="https://poser.pugx.org/ahmetarsiv/stripe-payment-gateway/d/total" alt="Total Downloads"></a>
+[![License](https://poser.pugx.org/codenteq/stripe-payment-gateway/license)](https://github.com/codenteq/stripe-payment-gateway/blob/master/LICENSE)
+<a href="https://packagist.org/packages/codenteq/stripe-payment-gateway"><img src="https://poser.pugx.org/codenteq/stripe-payment-gateway/d/total" alt="Total Downloads"></a>
 
 ## 1. Introduction:
 
@@ -16,7 +16,7 @@ Install this package now to receive secure payments in your online store. Stripe
 
 - Run the following command
 ```
-composer require ahmetarsiv/stripe-payment-gateway
+composer require codenteq/stripe-payment-gateway
 ```
 
 - Run these commands below to complete the setup

@@ -7,6 +7,6 @@ return [
         'description' => 'Stripe',
         'class'       => 'Webkul\Stripe\Payment\Stripe',
         'active'      => true,
-        'sort'        => 1,
+        'sort'        => 0,
     ],
 ];
