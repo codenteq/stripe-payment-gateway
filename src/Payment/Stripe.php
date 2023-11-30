@@ -13,7 +13,7 @@ class Stripe extends Payment
      */
     protected $code  = 'stripe';
 
-    public function getRedirectUrl()
+    public function getRedirectUrl(): string
     {
         return route('stripe.process');
     }

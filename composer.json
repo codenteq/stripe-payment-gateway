@@ -1,5 +1,5 @@
 {
-    "name": "ahmetarsiv/stripe-payment-gateway",
+    "name": "codenteq/stripe-payment-gateway",
     "type": "package",
     "description": "The Laravel eCommerce Stripe Payment Gateway",
     "keywords": [
@@ -10,7 +10,7 @@
         "opensource"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/ahmetarsiv",
+    "homepage": "https://codenteq.com",
     "minimum-stability": "dev",
     "authors": [
         {
@@ -21,17 +21,17 @@
         }
     ],
     "support": {
-        "source": "https://github.com/ahmetarsiv/stripe-payment-gateway",
-        "issues": "https://github.com/ahmetarsiv/stripe-payment-gateway/issues",
-        "email": "ahmetarsivpm@gmail.com"
+        "source": "https://github.com/codenteq/stripe-payment-gateway",
+        "issues": "https://github.com/codenteq/stripe-payment-gateway/issues",
+        "email": "info@codenteq.com"
     },
     "require": {
-        "stripe/stripe-php": "^10.12"
+        "stripe/stripe-php": "^13.4"
     },
     "funding": [
         {
             "type": "github",
-            "url": "https://github.com/sponsors/ahmetarsiv"
+            "url": "https://github.com/sponsors/codenteq"
         }
     ],
     "autoload": {

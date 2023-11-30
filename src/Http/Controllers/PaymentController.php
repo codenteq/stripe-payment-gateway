@@ -47,7 +47,7 @@ class PaymentController extends Controller
         $cart = Cart::getCart();
         $billingAddress = $cart->billing_address;
 
-        Stripe::setApiKey(core()->getConfigData('sales.paymentmethods.stripe.stripe_api_key'));
+        Stripe::setApiKey(core()->getConfigData('sales.payment_methods.stripe.stripe_api_key'));
 
         $shippingRate = $cart->selected_shipping_rate ? $cart->selected_shipping_rate->price : 0;
         $discountAmount = $cart->discount_amount;
@@ -89,9 +89,10 @@ class PaymentController extends Controller
         }
 
         Cart::deActivateCart();
+
         session()->flash('order', $order);
 
-        return redirect()->route('shop.checkout.success');
+        return redirect()->route('shop.checkout.onepage.success');
     }
 
     /**
