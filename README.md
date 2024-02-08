@@ -31,7 +31,7 @@ php artisan optimize
 
 - Go to the Bagisto admin panel, find the Stripe payment gateway, enter your API key and start receiving payments.
 ```
-http://localhost:8000/admin/configuration/sales/paymentmethods
+http://localhost:8000/admin/configuration/sales/payment_methods
 ```
 
 - To use the demo API key, paste the key into the Stripe Client Secret section.
@@ -66,7 +66,7 @@ php artisan optimize
 
 - Go to the Bagisto admin panel, find the Stripe payment gateway, enter your API key and start receiving payments.
 ```
-http://localhost:8000/admin/configuration/sales/paymentmethods
+http://localhost:8000/admin/configuration/sales/payment_methods
 ```
 
 - To use the demo API key, paste the key into the Stripe Client Secret section.

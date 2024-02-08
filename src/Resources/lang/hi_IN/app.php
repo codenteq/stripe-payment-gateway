@@ -8,10 +8,11 @@ return [
         'description'       => 'Stripe',
 
         'system' => [
-            'title'         => 'शीर्षक',
-            'description'   => 'विवरण',
-            'status'        => 'स्थिति',
-            'client-secret' => 'ग्राहक सीक्रेट',
+            'title'              => 'शीर्षक',
+            'description'        => 'विवरण',
+            'image'              => 'लोगो',
+            'status'             => 'स्थिति',
+            'client-secret'      => 'ग्राहक सीक्रेट',
             'client-secret-info' => 'अपनी गुप्त कुंजी यहां जोड़ें',
         ],
     ],

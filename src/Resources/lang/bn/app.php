@@ -8,10 +8,11 @@ return [
         'description'   => 'স্ট্রাইপ',
 
         'system' => [
-            'title'         => 'শিরোনাম',
-            'description'   => 'বিবরণ',
-            'status'        => 'অবস্থা',
-            'client-secret' => 'ক্লায়েন্ট সিক্রেট',
+            'title'              => 'শিরোনাম',
+            'description'        => 'বিবরণ',
+            'image'              => 'লোগো',
+            'status'             => 'অবস্থা',
+            'client-secret'      => 'ক্লায়েন্ট সিক্রেট',
             'client-secret-info' => 'আপনার গোপন চাবি এখানে যোগ করুন',
         ],
     ],

@@ -9,7 +9,7 @@ return [
             [
                 'name'          => 'title',
                 'title'         => 'stripe::app.stripe.system.title',
-                'type'          => 'depends',
+                'type'          => 'text',
                 'depend'        => 'active:1',
                 'validation'    => 'required_if:active,1',
                 'channel_based' => false,
@@ -24,9 +24,15 @@ return [
                 'name'          => 'stripe_api_key',
                 'title'         => 'stripe::app.stripe.system.client-secret',
                 'info'          => 'stripe::app.stripe.system.client-secret-info',
-                'type'          => 'depends',
+                'type'          => 'password',
                 'depend'        => 'active:1',
                 'validation'    => 'required_if:active,1',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'image',
+                'title'         => 'iyzico::app.iyzico.system.image',
+                'type'          => 'file',
                 'channel_based' => false,
                 'locale_based'  => true,
             ], [
@@ -36,7 +42,7 @@ return [
                 'validation'    => 'required',
                 'channel_based' => false,
                 'locale_based'  => true,
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

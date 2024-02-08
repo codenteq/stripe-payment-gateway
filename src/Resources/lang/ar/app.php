@@ -8,10 +8,11 @@ return [
         'description'       => 'Stripe',
 
         'system' => [
-            'title'         => 'العنوان',
-            'description'   => 'الوصف',
-            'status'        => 'الحالة',
-            'client-secret' => 'سر العميل',
+            'title'              => 'العنوان',
+            'description'        => 'الوصف',
+            'image'              => 'لوجو',
+            'status'             => 'الحالة',
+            'client-secret'      => 'سر العميل',
             'client-secret-info' => 'معلومات السر الخاصة بالعميل',
         ],
     ],

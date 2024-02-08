@@ -8,10 +8,11 @@ return [
         'description'   => 'Stripe',
 
         'system' => [
-            'title'         => 'כותרת',
-            'description'   => 'תיאור',
-            'status'        => 'סטטוס',
-            'client-secret' => 'סוד הלקוח',
+            'title'              => 'כותרת',
+            'description'        => 'תיאור',
+            'image'              => 'לוגו',
+            'status'             => 'סטטוס',
+            'client-secret'      => 'סוד הלקוח',
             'client-secret-info' => 'הוסף כאן את המפתח הסודי שלך',
         ],
     ],

@@ -10,6 +10,7 @@ return [
         'system' => [
             'title'             => 'Başlık',
             'description'       => 'Açıklama',
+            'image'             => 'Logo',
             'status'            => 'Durum',
             'client-secret'     => 'Müşteri Sırrı',
             'client-secret-info'=> 'Gizli anahtarınızı buraya ekleyin',

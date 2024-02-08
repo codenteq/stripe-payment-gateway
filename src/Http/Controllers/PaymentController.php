@@ -27,9 +27,6 @@ class PaymentController extends Controller
 
     /**
      * Create a new controller instance.
-     *
-     * @param \Webkul\Sales\Repositories\OrderRepository $orderRepository
-     * @param \Webkul\Sales\Repositories\InvoiceRepository $invoiceRepository
      */
     public function __construct(OrderRepository $orderRepository, InvoiceRepository $invoiceRepository)
     {
@@ -39,8 +36,6 @@ class PaymentController extends Controller
 
     /**
      * Redirects to the Stripe server.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function redirect(): \Illuminate\Http\RedirectResponse
     {
@@ -55,19 +50,19 @@ class PaymentController extends Controller
 
         $checkoutSession = Session::create([
             'payment_method_types' => ['card'],
-            'line_items' => [[
+            'line_items'           => [[
                 'price_data' => [
-                    'currency' => $cart->global_currency_code,
+                    'currency'     => $cart->global_currency_code,
                     'product_data' => [
-                        'name' => 'Stripe Checkout Payment order id - ' . $cart->id,
+                        'name' => 'Stripe Checkout Payment order id - '.$cart->id,
                     ],
                     'unit_amount' => $cart->grand_total * 100,
                 ],
                 'quantity' => 1,
             ]],
-            'mode' => 'payment',
+            'mode'        => 'payment',
             'success_url' => route('stripe.success'),
-            'cancel_url' => route('stripe.cancel'),
+            'cancel_url'  => route('stripe.cancel'),
         ]);
 
         return redirect()->away($checkoutSession->url);
@@ -75,8 +70,6 @@ class PaymentController extends Controller
 
     /**
      * Place an order and redirect to the success page.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function success(): RedirectResponse
     {
@@ -97,25 +90,22 @@ class PaymentController extends Controller
 
     /**
      * Redirect to the cart page with error message.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function failure(): RedirectResponse
     {
         session()->flash('error', 'Stripe payment was either cancelled or the transaction failed.');
+
         return redirect()->route('shop.checkout.cart.index');
     }
 
     /**
      * Prepares order's invoice data for creation.
-     *
-     * @return array
      */
     protected function prepareInvoiceData($order): array
     {
         $invoiceData = [
             'order_id' => $order->id,
-            'invoice' => ['items' => []],
+            'invoice'  => ['items' => []],
         ];
 
         foreach ($order->items as $item) {
