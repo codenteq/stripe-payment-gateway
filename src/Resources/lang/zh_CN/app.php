@@ -8,10 +8,11 @@ return [
         'description'       => 'Stripe',
 
         'system' => [
-            'title'         => '标题',
-            'description'   => '描述',
-            'status'        => '状态',
-            'client-secret' => '客户端秘密',
+            'title'              => '标题',
+            'description'        => '描述',
+            'image'              => '标志',
+            'status'             => '状态',
+            'client-secret'      => '客户端秘密',
             'client-secret-info' => '在这里添加您的秘密密钥',
         ],
     ],

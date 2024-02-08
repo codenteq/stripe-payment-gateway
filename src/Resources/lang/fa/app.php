@@ -8,10 +8,11 @@ return [
         'description'       => 'Stripe',
 
         'system' => [
-            'title'             => 'عنوان',
-            'description'       => 'توضیح',
-            'status'            => 'وضعیت',
-            'client-secret' => 'راز مشتری',
+            'title'              => 'عنوان',
+            'description'        => 'توضیح',
+            'image'              => 'لوگو',
+            'status'             => 'وضعیت',
+            'client-secret'      => 'راز مشتری',
             'client-secret-info' => 'کلید خود را اینجا اضافه کنید',
         ],
     ],
