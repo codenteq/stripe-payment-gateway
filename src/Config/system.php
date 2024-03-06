@@ -31,7 +31,7 @@ return [
                 'locale_based'  => true,
             ], [
                 'name'          => 'image',
-                'title'         => 'stripe::app.iyzico.system.image',
+                'title'         => 'stripe::app.stripe.system.image',
                 'type'          => 'file',
                 'channel_based' => false,
                 'locale_based'  => true,
