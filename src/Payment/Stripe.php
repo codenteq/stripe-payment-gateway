@@ -20,12 +20,12 @@ class Stripe extends Payment
     }
 
     /**
-     * Returns payment method image
+     * Returns payment method image.
      */
     public function getImage(): string
     {
         $url = $this->getConfigData('image');
 
-        return Storage::url($url);
+        return $url ? Storage::url($url) : bagisto_asset('images/money-transfer.png', 'shop');
     }
 }

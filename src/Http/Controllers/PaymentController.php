@@ -8,36 +8,29 @@ use Stripe\Stripe;
 use Webkul\Checkout\Facades\Cart;
 use Webkul\Sales\Repositories\InvoiceRepository;
 use Webkul\Sales\Repositories\OrderRepository;
+use Webkul\Sales\Transformers\OrderResource;
 
 class PaymentController extends Controller
 {
     /**
-     * OrderRepository $orderRepository
-     *
-     * @var \Webkul\Sales\Repositories\OrderRepository
-     */
-    protected $orderRepository;
-
-    /**
-     * InvoiceRepository $invoiceRepository
-     *
-     * @var \Webkul\Sales\Repositories\InvoiceRepository
-     */
-    protected $invoiceRepository;
-
-    /**
      * Create a new controller instance.
+     *
+     * @return void
+     *
+     * @var OrderRepository
+     * @var InvoiceRepository
      */
-    public function __construct(OrderRepository $orderRepository, InvoiceRepository $invoiceRepository)
-    {
-        $this->orderRepository = $orderRepository;
-        $this->invoiceRepository = $invoiceRepository;
+    public function __construct(
+        protected OrderRepository $orderRepository,
+        protected InvoiceRepository $invoiceRepository,
+    ) {
+        //
     }
 
     /**
      * Redirects to the Stripe server.
      */
-    public function redirect(): \Illuminate\Http\RedirectResponse
+    public function redirect(): RedirectResponse
     {
         $cart = Cart::getCart();
         $billingAddress = $cart->billing_address;
@@ -73,9 +66,11 @@ class PaymentController extends Controller
      */
     public function success(): RedirectResponse
     {
-        $order = $this->orderRepository->create(Cart::prepareDataForOrder());
+        $cart = Cart::getCart();
 
-        $this->orderRepository->update(['status' => 'processing'], $order->id);
+        $data = (new OrderResource($cart))->jsonSerialize();
+
+        $order = $this->orderRepository->create($data);
 
         if ($order->canInvoice()) {
             $this->invoiceRepository->create($this->prepareInvoiceData($order));
