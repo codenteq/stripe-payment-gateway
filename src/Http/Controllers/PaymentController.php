@@ -16,6 +16,7 @@ class PaymentController extends Controller
      * Create a new controller instance.
      *
      * @return void
+     *
      * @var OrderRepository
      * @var InvoiceRepository
      */
