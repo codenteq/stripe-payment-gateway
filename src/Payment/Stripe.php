@@ -3,6 +3,7 @@
 namespace Webkul\Stripe\Payment;
 
 use Illuminate\Support\Facades\Storage;
+use Webkul\Checkout\Facades\Cart;
 use Webkul\Payment\Payment\Payment;
 
 class Stripe extends Payment
@@ -17,6 +18,11 @@ class Stripe extends Payment
     public function getRedirectUrl(): string
     {
         return route('stripe.process');
+    }
+
+    public function isAvailable()
+    {
+        return Cart::getCart()->grand_total >= 0.5;
     }
 
     /**
