@@ -20,7 +20,12 @@ class Stripe extends Payment
         return route('stripe.process');
     }
 
-    public function isAvailable()
+    /**
+     * Checks if the cart grand total is greater than 0.5.
+     *
+     * @return bool
+     */
+    public function isAvailable(): bool
     {
         return Cart::getCart()->grand_total >= 0.5;
     }
