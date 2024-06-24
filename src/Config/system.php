@@ -3,6 +3,7 @@
 return [
     [
         'key'    => 'sales.payment_methods.stripe',
+        'info'   => 'stripe::app.stripe.info',
         'name'   => 'Stripe',
         'sort'   => 0,
         'fields' => [
@@ -32,6 +33,7 @@ return [
             ], [
                 'name'          => 'image',
                 'title'         => 'stripe::app.stripe.system.image',
+                'info'          => 'admin::app.configuration.index.sales.payment-methods.logo-information',
                 'type'          => 'file',
                 'channel_based' => false,
                 'locale_based'  => true,

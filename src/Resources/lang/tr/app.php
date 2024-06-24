@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Stripe ödeme yöntemi güvenli ve hızlı ödeme seçeneği.',
         'name'              => 'Stripe',
         'payment'           => 'Stripe Ödeme Ağ Geçidi',
         'title'             => 'Banka veya Kredi Kartı',

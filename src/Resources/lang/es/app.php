@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Método de pago Stripe opción de pago segura y rápida.',
         'name'              => 'Stripe',
         'payment'           => 'Pasarela de pago Stripe',
         'title'             => 'Tarjeta de débito o crédito',

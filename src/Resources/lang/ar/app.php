@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'طريقة الدفع Stripe خيار الدفع الآمن والسريع.',
         'name'              => 'Stripe',
         'payment'           => 'بوابة الدفع Stripe',
         'title'             => 'بطاقة الخصم أو الائتمان',

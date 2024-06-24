@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'          => 'שיטת תשלום Stripe אפשרות תשלום בטוחה ומהירה.',
         'name'          => 'Stripe',
         'payment'       => 'שער תשלומים Stripe',
         'title'         => 'בנק או כרטיס אשראי',

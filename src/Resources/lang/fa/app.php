@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'روش پرداخت Stripe گزینه پرداخت امن و سریع.',
         'name'              => 'Stripe',
         'payment'           => 'درگاه پرداخت Stripe',
         'title'             => 'کارت بدهی یا اعتباری',

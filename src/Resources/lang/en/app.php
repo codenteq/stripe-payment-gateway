@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Stripe payment method secure and fast payment option.',
         'name'              => 'Stripe',
         'payment'           => 'Stripe Payment Gateway',
         'title'             => 'Debit or Credit Card',
