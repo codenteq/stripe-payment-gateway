@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'          => 'Metoda płatności Stripe bezpieczna i szybka opcja płatności.',
         'name'          => 'Stripe',
         'payment'       => 'Bramka Płatności Stripe',
         'title'         => 'Bank lub Karta Kredytowa',

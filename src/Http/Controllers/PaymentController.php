@@ -78,19 +78,9 @@ class PaymentController extends Controller
 
         Cart::deActivateCart();
 
-        session()->flash('order', $order);
+        session()->flash('order_id', $order->id);
 
         return redirect()->route('shop.checkout.onepage.success');
-    }
-
-    /**
-     * Redirect to the cart page with error message.
-     */
-    public function failure(): RedirectResponse
-    {
-        session()->flash('error', 'Stripe payment was either cancelled or the transaction failed.');
-
-        return redirect()->route('shop.checkout.cart.index');
     }
 
     /**

@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Stripe-betaalmethode Veilige en snelle betalingsoptie.',
         'name'              => 'Stripe',
         'payment'           => 'Stripe-betalingsgateway',
         'title'             => 'Debet- of creditcard',

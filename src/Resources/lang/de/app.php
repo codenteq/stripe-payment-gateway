@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Stripe Zahlungsmethode Sichere und schnelle Zahlungsoption.',
         'name'              => 'Stripe',
         'payment'           => 'Stripe Payment Gateway',
         'title'             => 'Debit- oder Kreditkarte',

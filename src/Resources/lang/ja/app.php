@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'          => 'ストライプ支払い方法 安全で迅速な支払いオプション。',
         'name'          => 'Stripe',
         'payment'       => 'Stripe支払いゲートウェイ',
         'title'         => '銀行またはクレジットカード',

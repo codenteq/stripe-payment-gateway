@@ -2,6 +2,7 @@
 
 return [
     'stripe' => [
+        'info'              => 'Método de pagamento Stripe opção de pagamento segura e rápida.',
         'name'              => 'Stripe',
         'payment'           => 'Gateway de pagamento Stripe',
         'title'             => 'Cartão de débito ou crédito',
