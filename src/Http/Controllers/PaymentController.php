@@ -42,7 +42,6 @@ class PaymentController extends Controller
         $totalAmount = $cart->grand_total;
 
         $checkoutSession = Session::create([
-            'payment_method_types' => ['card'],
             'line_items'           => [[
                 'price_data' => [
                     'currency'     => $cart->global_currency_code,
