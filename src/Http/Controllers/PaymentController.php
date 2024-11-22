@@ -65,11 +65,9 @@ class PaymentController extends Controller
      */
     public function success(): RedirectResponse
     {
-        $cart = Cart::getCart();
+        Cart::collectTotals();
 
-        $data = (new OrderResource($cart))->jsonSerialize();
-
-        $order = $this->orderRepository->create($data);
+        $order = $this->orderRepository->create(Cart::prepareDataForOrder());
 
         if ($order->canInvoice()) {
             $this->invoiceRepository->create($this->prepareInvoiceData($order));
