@@ -38,7 +38,7 @@ http://localhost:8000/admin/configuration/sales/payment_methods
 
 - To use the demo API key, paste the key into the Stripe Client Secret section.
 ```
-sk_test_4eC39HqLyjWDarjtT1zdp7dc
+sk_test_BQokikJOvBiI2HlWgH4olfQ2
 ```
 
 ## Installation without composer:
@@ -73,7 +73,7 @@ http://localhost:8000/admin/configuration/sales/payment_methods
 
 - To use the demo API key, paste the key into the Stripe Client Secret section.
 ```
-sk_test_4eC39HqLyjWDarjtT1zdp7dc
+sk_test_BQokikJOvBiI2HlWgH4olfQ2
 ```
 
 > That's it, now just execute the project on your specified domain.

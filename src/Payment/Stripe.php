@@ -21,16 +21,6 @@ class Stripe extends Payment
     }
 
     /**
-     * Checks if the cart grand total is greater than 0.5.
-     *
-     * @return bool
-     */
-    public function isAvailable(): bool
-    {
-        return Cart::getCart()->grand_total >= 0.5;
-    }
-
-    /**
      * Returns payment method image.
      */
     public function getImage(): string
