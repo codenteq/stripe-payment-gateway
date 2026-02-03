@@ -44,7 +44,7 @@ class PaymentController extends Controller
         $checkoutSession = Session::create([
             'line_items'           => [[
                 'price_data' => [
-                    'currency'     => $cart->global_currency_code,
+                    'currency'     => $cart->cart_currency_code,
                     'product_data' => [
                         'name' => 'Stripe Checkout Payment order id - '.$cart->id,
                     ],
